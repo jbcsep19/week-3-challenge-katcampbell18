@@ -7,19 +7,22 @@ public class Person {
     private String email;
     private ArrayList<Education> education;
     private ArrayList<Job> job;
-    private ArrayList<Skills> skills;
+    private ArrayList<Skill> skill;
 
     public Person() {
+        this.education = new ArrayList<Education> ();
+        this.job = new ArrayList<Job>();
+        this.skill = new ArrayList<Skill>();
+
     }
 
-    public Person(String name, String email, ArrayList<Education> education, ArrayList<Job> job, ArrayList<Skills> skills) {
+    public Person(String name, String email, ArrayList<Education> edu, ArrayList<Job> j, ArrayList<Skill> s) {
         this.name = name;
         this.email = email;
-        this.education = education;
-        this.job = job;
-        this.skills = skills;
+        this.education = edu;
+        this.job = j;
+        this.skill = s;
     }
-
 
     public String getName() {
         return name;
@@ -45,13 +48,19 @@ public class Person {
         this.education = education;
     }
 
+    public ArrayList<Job> getJob() {
+        return job;
+    }
+
     public void setJob(ArrayList<Job> job) {
         this.job = job;
     }
 
-    public void setSkills(ArrayList<Skills> skills) {
-        this.skills = skills;
+    public ArrayList<Skill> getSkill() {
+        return skill;
     }
 
-
+    public void setSkills(ArrayList<Skill> skill) {
+        this.skill = skill;
+    }
 }

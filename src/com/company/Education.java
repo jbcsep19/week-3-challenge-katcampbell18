@@ -7,16 +7,12 @@ public class Education {
     private String school;
     private String gradYear;
 
-    public Education() {
-    }
-
     public Education(String degree, String major, String school, String gradYear) {
         this.degree = degree;
         this.major = major;
         this.school = school;
         this.gradYear = gradYear;
     }
-
 
     public String getDegree() {
         return degree;

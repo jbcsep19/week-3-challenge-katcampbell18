@@ -7,12 +7,9 @@ public class Job {
     private String endDate;
     private String description;
 
-    public Job() {
-    }
-
     public Job(String company, String title, String startDate, String endDate, String description) {
         this.company = company;
-        this.title = title;
+        this.title =title;
         this.startDate = startDate;
         this.endDate = endDate;
         this.description = description;
